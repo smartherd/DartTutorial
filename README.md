@@ -1,8 +1,6 @@
 # Dart Programming Tutorial for Beginners 
 Learn Dart Programming, its basics and Fundamentals from scratch.
 
-#### Dart Video tutorial for FREE --> [Click to WATCH NOW](https://www.youtube.com/watch?v=5rtujDjt50I&list=PLlxmoA0rQ-LyHW9voBdNo4gEEIh0SjG-q)
-
 ## Topics to be covered
 0. Overview
     - Course introduction, prequisites and software required
