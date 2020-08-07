@@ -21,7 +21,7 @@ class Student {
   double _percent;    // Private Instance Variable for its own library
 
   // Instance variable with Custom Setter
-  void set percentage(double marksSecured) => _percent = (marksSecured / 500) * 100;
+  set percentage(double marksSecured) => _percent = (marksSecured / 500) * 100; //Avoid return types on setters
   // Instance variable with Custom Getter
   double get percentage => _percent;
 }
