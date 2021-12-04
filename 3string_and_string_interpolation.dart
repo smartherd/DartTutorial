@@ -16,7 +16,6 @@ void main() {
 	String s5 = 'This is going to be a very long String. '
 			'This is just a sample String demo in Dart Programming Language';
 
-
 	// String Interpolation : Use ["My name is $name"] instead of ["My name is " + name]
 	String name = "Kevin";
 

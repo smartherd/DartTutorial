@@ -7,7 +7,7 @@ void main() {
 	// Elements:    N   N   N   N   N
 	// Index:       0   1   2   3   4
 
-	List<int> numbersList = List(5);        // Fixed-length list
+	List<int?> numbersList = List.filled(5, null, growable: false);        // Fixed-length list
 	numbersList[0] = 73;  // Insert operation
 	numbersList[1] = 64;
 	numbersList[3] = 21;
@@ -24,7 +24,7 @@ void main() {
 //	numbersList.removeAt(3);                // Not supported in fixed-length list
 //	numbersList.clear();                    // Not supported in fixed-length list
 
-	for (int element in numbersList) {                          // Using Individual Element (Objects)
+	for (int? element in numbersList) {                          // Using Individual Element (Objects)
 		print(element);
 	}
 
