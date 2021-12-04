@@ -21,7 +21,7 @@ class Animal {
 
 class Dog extends Animal {
 
-	String breed;
+	late String breed;
 
 	String color = "Black";     // Property Overriding
 

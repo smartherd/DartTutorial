@@ -17,8 +17,8 @@ void main() {
 abstract class Shape {
 
 	// Define your Instance variable if needed
-	int x;
-	int y;
+	late int x;
+	late int y;
 
 	void draw();        // Abstract Method
 

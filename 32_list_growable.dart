@@ -11,7 +11,7 @@ void main() {
 	countries.add("Japan");
 
 
-	List<int> numbersList = List();                         // Growable List: METHOD 2
+	List<int?> numbersList = List.generate(3, (index) => null);                         // Growable List: METHOD 2
 	numbersList.add(73);    // Insert Operation
 	numbersList.add(64);
 	numbersList.add(21);
@@ -29,7 +29,7 @@ void main() {
 
 	print("\n");
 
-	for (int element in numbersList) {                  // Using Individual Element ( Objects )
+	for (int? element in numbersList) {                  // Using Individual Element ( Objects )
 		print(element);
 	}
 

@@ -19,7 +19,7 @@ void main() {
 // Define states (properties) and behavior of a Student
 class Student {
 	int id = -1; 			// Instance or Field Variable, default value is -1
-	String name;  		// Instance or Field Variable, default value is null
+	late String name;  		// Instance or Field Variable, default value is null
 
 	void study() {
 		print("${this.name} is now studying");
