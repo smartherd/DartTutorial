@@ -21,7 +21,7 @@ void main() {
 	String name = "Kevin";
 
 	print("My name is $name");
-	print("The number of characters in String Kevin is ${name.length}");
+	print("The number of characters in String $name is ${name.length}");
 
 
 	int l = 20;
