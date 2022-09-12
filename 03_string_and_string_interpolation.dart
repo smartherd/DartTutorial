@@ -22,6 +22,9 @@ void main() {
 
 	print("My name is $name");
 	print("The number of characters in String Kevin is ${name.length}");
+	
+	/// if you do not want to use String interpolation use [ name.length.toString()
+	print("The number of characters in String Kevin is "+name.length.toString());
 
 
 	int l = 20;
