@@ -63,4 +63,4 @@ Learn Dart Programming, its basics and Fundamentals from scratch.
 
 ## Authors
 
-* **Team Smartherd** 
+* **Sriyank Siddhartha** 
