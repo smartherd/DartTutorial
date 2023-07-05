@@ -2,6 +2,8 @@
 // 1. Inheritance with Default Constructor and Parameterised Constructor
 // 2. Inheritance with Named Constructor
 
+// ignore_for_file: unused_local_variable
+
 void main() {
   var dog1 = Dog("Labrador", "Black");
 
