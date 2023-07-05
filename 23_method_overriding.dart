@@ -1,38 +1,36 @@
-
 // Objectives
 // 1. Exploring Method Overriding
 
 void main() {
-
-	var dog = Dog();
-	dog.eat();
-
-	print(dog.color);
+  var dog = Dog('mastiff', 'yellow');
+  dog.eat();
+  dog.bark();
 }
 
 class Animal {
+  String color = "brown";
 
-	String color = "brown";
-
-	void eat() {
-		print("Animal is eating !");
-	}
+  void eat() {
+    print("Animal $color is eating !");
+  }
 }
 
 class Dog extends Animal {
+  String color = "Black"; // Property Overriding
+  String? breed;
 
-	String breed;
+  Dog(this.breed, this.color); // constructor
 
-	String color = "Black";     // Property Overriding
+  void bark() {
+    print("Bark !");
+  }
 
-	void bark() {
-		print("Bark !");
-	}
-
-	// Method Overriding
-	void eat() {
-		print("Dog is eating !");
-		super.eat();
-		print("More food to eat");
-	}
+  // Method Overriding
+  @override
+  void eat() {
+    // overrides Animal 'eat' function
+    print("Dog breed $breed  color $color eating !");
+    super.eat();
+    print("More food to eat");
+  }
 }

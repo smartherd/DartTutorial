@@ -1,46 +1,44 @@
-
 // Objectives
 // 1. Inheritance with Default Constructor and Parameterised Constructor
 // 2. Inheritance with Named Constructor
 
+// ignore_for_file: unused_local_variable
+
 void main() {
+  var dog1 = Dog("Labrador", "Black");
 
-	var dog1 = Dog("Labrador", "Black");
+  print("");
 
-	print("");
+  var dog2 = Dog("Pug", "Brown");
 
-	var dog2 = Dog("Pug", "Brown");
+  print("");
 
-	print("");
-
-	var dog3 = Dog.myNamedConstructor("German Shepherd", "Black-Brown");
+  var dog3 = Dog.myNamedConstructor("German Shepherd", "Black-Brown");
 }
 
 class Animal {
+  String color;
 
-	String color;
+  Animal(this.color) {
+    print("Animal class constructor");
+  }
 
-	Animal(String color) {
-		this.color = color;
-		print("Animal class constructor");
-	}
-
-	Animal.myAnimalNamedConstrctor(String color) {
-		print("Animal class named constructor");
-	}
+  Animal.myAnimalNamedConstructor(this.color) {
+    print("Animal class named constructor $color");
+  }
 }
 
 class Dog extends Animal {
+  String breed;
 
-	String breed;
+  Dog(this.breed, String color) : super(color) {
+    this.breed = breed;
+    print("Dog $breed class $color constructor");
+  }
 
-	Dog(String breed, String color) : super(color) {
-		this.breed = breed;
-		print("Dog class constructor");
-	}
-
-	Dog.myNamedConstructor(String breed, String color) : super.myAnimalNamedConstrctor(color) {
-		this.breed = breed;
-		print("Dog class Named Constructor");
-	}
+  Dog.myNamedConstructor(this.breed, String color)
+      : super.myAnimalNamedConstructor(color) {
+    this.breed = breed;
+    print("Dog $color class $breed Named Constructor");
+  }
 }
