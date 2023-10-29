@@ -18,7 +18,7 @@ void main() {
 
 class Animal {
 
-	String color;
+	String? color;
 
 	Animal(String color) {
 		this.color = color;
@@ -32,7 +32,7 @@ class Animal {
 
 class Dog extends Animal {
 
-	String breed;
+	String? breed;
 
 	Dog(String breed, String color) : super(color) {
 		this.breed = breed;

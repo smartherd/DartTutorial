@@ -33,7 +33,7 @@ void main() {
 // Define states (properties) and behavior of a Student
 class Student {
 	int id = -1;
-	String name;
+	String? name;
 
 	Student(this.id, this.name);    // Parameterised Constructor
 

@@ -19,9 +19,19 @@ void main(List<String> arguments) {
 	bool isValid = true;
 	var isAlive = false;
 
+	// Nullable types: dataType? varName = null;
+	int? number = null;
+
 	print(score);
 	print(exponents);
 
-	// NOTE: All data types in Dart are Objects.
-	// Therefore, their initial value is by default 'null'
+	/*
+	NOTE: by default, the initial value of a data type
+	cannot be null. unless explicitly specified with the ? symbol.
+	example:
+		int number = null; // Throws the error bellow
+		// Error: The value 'null' can't be assigned to a variable of type
+					'int' because 'int' is not nullable.
+	*/
+
 }

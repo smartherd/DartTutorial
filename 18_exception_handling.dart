@@ -13,7 +13,7 @@ void main() {
 	try {
 		int result = 12 ~/ 0;
 		print("The result is $result");
-	} on IntegerDivisionByZeroException {
+	} on UnsupportedError {
 		print("Cannot divide by Zero");
 	}
 
@@ -52,7 +52,7 @@ void main() {
 	try {
 		depositMoney(-200);
 	} catch (e) {
-		print(e.errorMessage());
+		print(e);
 	} finally {
 		// Code
 	}
